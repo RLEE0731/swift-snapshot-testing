@@ -1021,6 +1021,8 @@ private func add(traits: UITraitCollection, viewController: UIViewController, to
   viewController.didMove(toParent: rootViewController)
 
   window.rootViewController = rootViewController
+    rootViewController.view.insetsLayoutMarginsFromSafeArea = true
+
 
   rootViewController.beginAppearanceTransition(true, animated: false)
   rootViewController.endAppearanceTransition()
